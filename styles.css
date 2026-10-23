@@ -1,0 +1,251 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  top: 0;
+  left: 0;
+  position: relative;      /* mountains now position inside this box */
+  width: 100%;
+  height: 400px; 
+  margin: 0;          /* pick the height you want for the carousel */
+  overflow: hidden;        /* replaces the overflow rule on body */
+}
+
+.scene {
+  position: relative;
+  width: 100%;  
+  height: 100%;
+  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+  overflow: hidden;
+}
+
+.scene .left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.scene .back-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+  position: absolute;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 110px;
+  top: 225px;
+}
+
+.picture{
+    display: block;
+    width: 200px;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin: 70px auto 50px;
+}
+.name{
+  font-family: 'Pacifico', cursive;
+  color: #6cc4c4;
+  font-size: 28px;
+}
+.highlight {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  
+}
+#position{
+  color: #6cc4c4;
+  font-size: 36px;
+  margin-top: -30px;
+}
+
+p{
+    text-align: center;
+    margin: 50px auto 50px;
+    
+}
+
+.dots {
+  display: flex;
+  justify-content: center;  /* centers the row */
+  gap: 12px;                /* space between dots */
+  margin: 20px 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;       /* makes it a circle */
+  background: rgb(118, 201, 255);      /* light mint, close to your image */
+  margin-bottom: 50px;
+
+
+}
+
+ .menu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #6cc5c5;
+    text-align: center;
+    margin: 50px auto 50px;
+
+  }
+
+.design-dev {
+  display: flex;
+  align-items: center;    
+  gap: 1px;                
+  max-width: 600px;
+  margin: 50px auto 10px;        /* centers the whole section */
+  padding: 20px 16px;
+  box-sizing: border-box;
+}
+.design-text{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.7;
+ margin: 50px auto 50px;
+}
+
+.design-img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;            /* stops the image from being squeezed */
+}
+
+  .designskill{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #6cc5c5;
+  margin-bottom:0px;
+  gap: 10px;
+   
+  }
+
+
+
+@media (max-width: 700px) {
+  .design-dev {
+    flex-direction: column;
+    text-align: center;
+  }
+  .design-text { text-align: center; }
+  .design-img { width: 100%; height: auto; }
+  
+
+}
+
+.dots {
+  display: flex;
+  justify-content: center;  /* centers the row */
+  gap: 12px;                /* space between dots */
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;       /* makes it a circle */
+  background: rgb(118, 201, 255);      /* light mint, close to your image */
+  margin-bottom: 50px;
+
+
+}
+
+.contact{
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 1.7;
+margin: 0 auto;
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+    
+}
+
+.footer {
+  top: 0;
+  left: 0;
+  position: relative;      /* mountains now position inside this box */
+  width: 100%;
+  height: 200px; 
+  margin-top: 40px;          /* pick the height you want for the carousel */
+  overflow: hidden;        /* replaces the overflow rule on body */
+}
+
+.scene {
+  position: relative;
+  width: 100%;  
+  height: 100%;
+  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+  overflow: hidden;
+}
+
+.scene .left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.scene .back-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+  position: absolute;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 110px;
+  top: 225px;
+}
+footer-content{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  
+}
+  
+
+li{
+  text-decoration: none;
+  color: #6cc5c5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+footer a {
+  text-decoration: none;
+}
+
+footer {
+  padding-top: 40px;
+}
